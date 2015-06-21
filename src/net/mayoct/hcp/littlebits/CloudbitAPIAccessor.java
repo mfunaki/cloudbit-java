@@ -17,8 +17,8 @@ public class CloudbitAPIAccessor {
 		// nothing to do
 	}
 	
-	public Cloudbit getCloudbit(String deviceId, String accessToken) throws IOException {
-		Cloudbit cloudbit = new Cloudbit();
+	public Cloudbit getCloudbit(String deviceId, String accessToken) 
+			throws IOException {
 		
 		URL url = new URL(API_ENTRY + "/devices/" + deviceId);
 		HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
@@ -35,6 +35,7 @@ public class CloudbitAPIAccessor {
 			throw new IOException("getCloudbit" + message);
 		}
 		
+		Cloudbit cloudbit = new Cloudbit();
 		BufferedReader reader = new BufferedReader(
 				new InputStreamReader(urlConnection.getInputStream()));
 		String line;
