@@ -6,9 +6,9 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-import org.json.JSONObject;
-
 import net.mayoct.hcp.littlebits.persistence.Cloudbit;
+
+import org.json.JSONObject;
 
 public class CloudbitAPIAccessor {
 	protected static final String API_ENTRY = "https://api-http.littlebitscloud.cc";
