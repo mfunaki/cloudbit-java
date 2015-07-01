@@ -16,7 +16,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.sql.DataSource;
 
-import net.mayoct.hcp.littlebits.persistence.Cloudbit;
 import net.mayoct.hcp.littlebits.persistence.CloudbitEvent;
 import net.mayoct.hcp.littlebits.persistence.CloudbitEventDAO;
 
@@ -175,5 +174,4 @@ public class CloudbitSubscriptionServlet extends HttpServlet {
 		}
 		cloudbitEventDAO.addRow(eventData);
 	}
-	
 }
