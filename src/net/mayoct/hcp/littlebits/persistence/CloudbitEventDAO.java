@@ -27,7 +27,7 @@ public class CloudbitEventDAO {
 		Connection connection = dataSource.getConnection();
 		try {
 			PreparedStatement pstmt = connection.prepareCall(
-					"set schema NEO_XXXXXXXXXXXXXXXXXXXXXXXXX");
+					"set schema NEO_08ZQOKUJHBH5PMI6WAUGN0GDU");
 			pstmt.execute();
 		} finally {
 			if (connection != null) {
